@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>springboot初学 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="第一次借了spring boot的书来看挺激动的？ 今天学习的大概就是Spring的基础了 ~ o(￣▽￣)o 某大佬督促我这个菜鸟来写一下东西？又是被完虐的一天？ ————手动分割———— 1.书里说Spring可以解决Java EE开发的所有问题 因为它提供了Ioc容器，AOP，数据访问，Web开发，消息，测试等等（以上专业术语一个都不懂，只是单纯的码下来） 2.Spring使用简单的POJO">
+<meta property="og:type" content="article">
+<meta property="og:title" content="springboot初学">
+<meta property="og:url" content="http://yoursite.com/2018/05/08/springboot初学/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="第一次借了spring boot的书来看挺激动的？ 今天学习的大概就是Spring的基础了 ~ o(￣▽￣)o 某大佬督促我这个菜鸟来写一下东西？又是被完虐的一天？ ————手动分割———— 1.书里说Spring可以解决Java EE开发的所有问题 因为它提供了Ioc容器，AOP，数据访问，Web开发，消息，测试等等（以上专业术语一个都不懂，只是单纯的码下来） 2.Spring使用简单的POJO">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="c:/Users/阿珏/Pictures/Saved%20Pictures/下载/2018_5_8.png">
+<meta property="og:updated_time" content="2018-05-08T16:01:39.740Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="springboot初学">
+<meta name="twitter:description" content="第一次借了spring boot的书来看挺激动的？ 今天学习的大概就是Spring的基础了 ~ o(￣▽￣)o 某大佬督促我这个菜鸟来写一下东西？又是被完虐的一天？ ————手动分割———— 1.书里说Spring可以解决Java EE开发的所有问题 因为它提供了Ioc容器，AOP，数据访问，Web开发，消息，测试等等（以上专业术语一个都不懂，只是单纯的码下来） 2.Spring使用简单的POJO">
+<meta name="twitter:image" content="c:/Users/阿珏/Pictures/Saved%20Pictures/下载/2018_5_8.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-springboot初学" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/08/springboot初学/" class="article-date">
+  <time datetime="2018-05-08T15:07:48.000Z" itemprop="datePublished">2018-05-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      springboot初学
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第一次借了spring boot的书来看挺激动的？</p>
+<p>今天学习的大概就是Spring的基础了</p>
+<p>~ o(<em>￣▽￣</em>)o</p>
+<p>某大佬督促我这个菜鸟来写一下东西？又是被完虐的一天？</p>
+<p>————手动分割————</p>
+<p>1.书里说Spring可以解决Java EE开发的所有问题 因为它提供了Ioc容器，AOP，数据访问，Web开发，消息，测试等等（以上专业术语一个都不懂，只是单纯的码下来）</p>
+<p>2.Spring使用简单的POJO（Plain Old Java Object 无限制的普通Java对象），来进行企业级开发。每一个被Spring管理的Java对象都被称之为Bean，而Spring提供了一个IoC容器用来初始化对象，解决对象间的依赖管理和对象的使用（同上，码着先，感觉有点用？）</p>
+<p>3.Spring是模块化的，每一个模块至少对应一个jar包？（所以jar包又是什么？😫）</p>
+<p>4.项目构建工具：Maven，Ant，Gradle</p>
+<p>5.用Maven管理项目，项目依赖的jar包不包含在项目内，而放在用户目录下的.m2文件夹下</p>
+<p>6.<img src="C:\Users\阿珏\Pictures\Saved Pictures\下载\2018_5_8.png" alt="2018_5_8"></p>
+<p>今天下载maven的时候还出现了问题，找不到要下载哪一个？</p>
+<p>下载网址：<a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">https://maven.apache.org/download.cgi</a></p>
+<p>7.添加环境变量的问题</p>
+<p>电脑——属性——高级系统设置——环境变量</p>
+<p>配置M2_HOME    D:\Spring Boot\apache-maven-3.5.3</p>
+<p>Path    %M2_HOME%\bin;D:\Spring Boot\apache-maven-3.5.3\bin;（两个随便写一个就好）</p>
+<p>cmd    mvn -v</p>
+<p>8.Maven 基于项目对象模型的概念运作的，每一个Maven都有一个pom.xml来管理项目依赖和项目编译</p>
+<p>9.Maven的运作方式：根据dependency中的依赖配置，直接通过互联网，在Maven中心库下载相关的依赖包到.m2目录下。</p>
+<p>关于依赖jar包的dependency，参考网址 <a href="https://mvnrepository.com" target="_blank" rel="noopener">https://mvnrepository.com</a></p>
+<p>但有些jar包在Maven中心库没有，如Oracle，需要安装Oracle驱动到本地库：</p>
+<p>mvp install:install-file -Dgroupld=com.oracle “-DartifactID=ojdbc14”</p>
+<p>“-Dversion=10.2.0.2.0” “-Dpackaging=jar” “-Dfile=D:\ojdbc14.jar”</p>
+<p>10.下载Spring Tool Suite <a href="https://spring.io/tools/sts/all" target="_blank" rel="noopener">https://spring.io/tools/sts/all</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/08/springboot初学/" data-id="cjgxv65gs00042w9yn80cfnci" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/07/如何搭建个人博客（Hexo-Github）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">如何搭建个人博客（Hexo+Github）</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/08/springboot初学/">springboot初学</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/07/如何搭建个人博客（Hexo-Github）/">如何搭建个人博客（Hexo+Github）</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/07/2018-5-7/">2018-5-7</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/06/2018-5-5/">2018-5-5</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/06/2018-5-60/">2018-5-60</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

@@ -62,6 +62,103 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-springboot初学" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/08/springboot初学/" class="article-date">
+  <time datetime="2018-05-08T15:07:48.000Z" itemprop="datePublished">2018-05-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/08/springboot初学/">springboot初学</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第一次借了spring boot的书来看挺激动的？</p>
+<p>今天学习的大概就是Spring的基础了</p>
+<p>~ o(<em>￣▽￣</em>)o</p>
+<p>某大佬督促我这个菜鸟来写一下东西？又是被完虐的一天？</p>
+<p>————手动分割————</p>
+<p>1.书里说Spring可以解决Java EE开发的所有问题 因为它提供了Ioc容器，AOP，数据访问，Web开发，消息，测试等等（以上专业术语一个都不懂，只是单纯的码下来）</p>
+<p>2.Spring使用简单的POJO（Plain Old Java Object 无限制的普通Java对象），来进行企业级开发。每一个被Spring管理的Java对象都被称之为Bean，而Spring提供了一个IoC容器用来初始化对象，解决对象间的依赖管理和对象的使用（同上，码着先，感觉有点用？）</p>
+<p>3.Spring是模块化的，每一个模块至少对应一个jar包？（所以jar包又是什么？😫）</p>
+<p>4.项目构建工具：Maven，Ant，Gradle</p>
+<p>5.用Maven管理项目，项目依赖的jar包不包含在项目内，而放在用户目录下的.m2文件夹下</p>
+<p>6.<img src="C:\Users\阿珏\Pictures\Saved Pictures\下载\2018_5_8.png" alt="2018_5_8"></p>
+<p>今天下载maven的时候还出现了问题，找不到要下载哪一个？</p>
+<p>下载网址：<a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">https://maven.apache.org/download.cgi</a></p>
+<p>7.添加环境变量的问题</p>
+<p>电脑——属性——高级系统设置——环境变量</p>
+<p>配置M2_HOME    D:\Spring Boot\apache-maven-3.5.3</p>
+<p>Path    %M2_HOME%\bin;D:\Spring Boot\apache-maven-3.5.3\bin;（两个随便写一个就好）</p>
+<p>cmd    mvn -v</p>
+<p>8.Maven 基于项目对象模型的概念运作的，每一个Maven都有一个pom.xml来管理项目依赖和项目编译</p>
+<p>9.Maven的运作方式：根据dependency中的依赖配置，直接通过互联网，在Maven中心库下载相关的依赖包到.m2目录下。</p>
+<p>关于依赖jar包的dependency，参考网址 <a href="https://mvnrepository.com" target="_blank" rel="noopener">https://mvnrepository.com</a></p>
+<p>但有些jar包在Maven中心库没有，如Oracle，需要安装Oracle驱动到本地库：</p>
+<p>mvp install:install-file -Dgroupld=com.oracle “-DartifactID=ojdbc14”</p>
+<p>“-Dversion=10.2.0.2.0” “-Dpackaging=jar” “-Dfile=D:\ojdbc14.jar”</p>
+<p>10.下载Spring Tool Suite <a href="https://spring.io/tools/sts/all" target="_blank" rel="noopener">https://spring.io/tools/sts/all</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/08/springboot初学/" data-id="cjgxv65gs00042w9yn80cfnci" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-如何搭建个人博客（Hexo-Github）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/05/07/如何搭建个人博客（Hexo-Github）/" class="article-date">
+  <time datetime="2018-05-07T11:10:23.000Z" itemprop="datePublished">2018-05-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/07/如何搭建个人博客（Hexo-Github）/">如何搭建个人博客（Hexo+Github）</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/05/07/如何搭建个人博客（Hexo-Github）/" data-id="cjgxv65hd00062w9yxu5al908" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-2018-5-7" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/05/07/2018-5-7/" class="article-date">
@@ -93,7 +190,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/07/2018-5-7/" data-id="cjgvjqvzq0002tw9yky5ylu7w" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/07/2018-5-7/" data-id="cjgxv65gk00032w9y04zt6j1k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -130,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/06/2018-5-5/" data-id="cjgvjqvzf0000tw9y2asob5mb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/06/2018-5-5/" data-id="cjgxv65fo00012w9y471r02rb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -168,7 +265,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/06/2018-5-60/" data-id="cjgvjqvzs0003tw9yhq820q5o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/06/2018-5-60/" data-id="cjgxv65g600022w9yavdo3wue" class="article-share-link">Share</a>
       
       
     </footer>
@@ -200,14 +297,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<p>dytfyuvupj</p>
-<p>安居</p>
+        <p>hello world!</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/06/2018-5-6/" data-id="cjgvjqvzn0001tw9y6dwfgzzi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/06/2018-5-6/" data-id="cjgxv65eq00002w9ye6320gxq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -252,7 +347,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/06/hello-world/" data-id="cjgvjqvzv0004tw9yqm51e7nu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/06/hello-world/" data-id="cjgxv65h200052w9yzyw7o17n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -292,6 +387,14 @@
       <ul>
         
           <li>
+            <a href="/2018/05/08/springboot初学/">springboot初学</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/07/如何搭建个人博客（Hexo-Github）/">如何搭建个人博客（Hexo+Github）</a>
+          </li>
+        
+          <li>
             <a href="/2018/05/07/2018-5-7/">2018-5-7</a>
           </li>
         
@@ -301,14 +404,6 @@
         
           <li>
             <a href="/2018/05/06/2018-5-60/">2018-5-60</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/06/2018-5-6/">2018-5-6</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/06/hello-world/">Hello World</a>
           </li>
         
       </ul>
